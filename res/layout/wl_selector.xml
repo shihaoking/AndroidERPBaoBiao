@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <TableLayout
+        android:id="@+id/wlSelectorTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:stretchColumns="1" >
+        <TableRow android:gravity="center_horizontal|bottom" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wlCategory"
+                android:textSize="19dip" />
+            <Spinner
+                android:id="@+id/mainWlCategory"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/wlCategorySubRow"
+            android:gravity="center_horizontal"
+            android:visibility="gone" >
+            <TextView
+                android:id="@+id/wlNameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wlCategorySub"
+                android:textSize="19dip" />
+            <Spinner
+                android:id="@+id/subWlCategory"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip" />
+        </TableRow>
+    </TableLayout>
+    <ListView
+        android:id="@+id/wlSelectorList"
+        android:layout_width="fill_parent"
+        android:layout_height="210dip"
+        android:layout_below="@id/wlSelectorTable"
+        android:cacheColorHint="#00000000"
+        android:smoothScrollbar="true" >
+    </ListView>
+    <Button
+        android:id="@+id/submitNewWlBtn"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:layout_span="2"
+        android:text="@string/ok" />
+</RelativeLayout>

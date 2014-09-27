@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:stretchColumns="0,1" >
+    <TableRow>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <ImageButton
+                android:id="@+id/newOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#00000000"
+                android:contentDescription="@string/newOrderTitle"
+                android:src="@drawable/new_order_main" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/newOrder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:text="@string/newOrderTitle"
+                android:textColor="#FFFFFF"
+                android:textSize="16dip" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <ImageButton
+                android:id="@+id/searchOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#00000000"
+                android:contentDescription="@string/searchOrder"
+                android:src="@drawable/search_order_main" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/searchOrder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:text="@string/searchOrder"
+                android:textColor="#FFFFFF"
+                android:textSize="16dip" />
+        </RelativeLayout>
+    </TableRow>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="#00000000" />
+    <TableRow>
+        <RelativeLayout
+            android:id="@+id/auditLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <ImageButton
+                android:id="@+id/auditOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="#00000000"
+                android:contentDescription="@string/auditOrder"
+                android:src="@drawable/check_order_main" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/auditOrder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:text="@string/auditOrder"
+                android:textColor="#FFFFFF"
+                android:textSize="16dip" />
+        </RelativeLayout>
+    </TableRow>
+</TableLayout>

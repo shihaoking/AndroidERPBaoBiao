@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mymoney_bg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/settingTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bar_bg" >
+        <Button
+            android:id="@+id/backToMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/top_back_btn"
+            android:text="@string/back"
+            android:textColor="#ffffff"
+            android:textSize="14dip" >
+        </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/systemSetting"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/setting_top_normal"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingTop="10dip" >
+            <TextView
+                style="@style/logintextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/managerPhone" />
+            <EditText
+                android:id="@+id/managerPhone"
+                style="@style/loginEdittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/setting_middle_normal"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingTop="5dip" >
+            <TextView
+                style="@style/logintextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/ywyPhone" />
+            <EditText
+                android:id="@+id/ywyPhone"
+                style="@style/loginEdittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/setting_bottom_normal"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="15dip"
+            android:paddingTop="5dip" >
+            <TextView
+                style="@style/logintextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="服务器IP" />
+            <EditText
+                android:id="@+id/serverUrl"
+                style="@style/loginEdittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/submitSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/login_btn" />
+</LinearLayout>

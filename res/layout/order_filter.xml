@@ -1,0 +1,69 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:stretchColumns="1" >
+    <TableRow android:gravity="center_horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/checkStatus"
+            android:textColor="#ffffff"
+            android:textSize="17dip" />
+        <Spinner
+            android:id="@+id/filterCheckStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+    <TableRow
+        android:paddingBottom="5dip"
+        android:paddingTop="3dip" >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:gravity="center"
+            android:text="@string/orderCreateDate"
+            android:textColor="#ffffff"
+            android:textSize="19dip" />
+    </TableRow>
+    <TableRow android:gravity="center_horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orderCreateStartDate"
+            android:textColor="#ffffff"
+            android:textSize="17dip" />
+        <Button
+            android:id="@+id/filterStartDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dateTip" >
+        </Button>
+    </TableRow>
+    <TableRow android:gravity="center_horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orderCreateEndDate"
+            android:textColor="#ffffff"
+            android:textSize="17dip" />
+        <Button
+            android:id="@+id/filterEndDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dateTip" >
+        </Button>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/submitFilterBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_span="2"
+            android:text="@string/ok" />
+    </TableRow>
+</TableLayout>

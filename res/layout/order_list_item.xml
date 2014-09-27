@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg"
+    android:orientation="horizontal"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip" >
+    <ImageView
+        android:id="@+id/statusImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1" />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="bottom|left" >
+            <TextView
+                android:id="@+id/noTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#6C4E34"
+                android:textSize="16dip" />
+            <TextView
+                android:id="@+id/categoryTextView"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="#000000" />
+        </TableRow>
+        <TableRow
+            android:layout_weight="1"
+            android:gravity="top|left" >
+            <TextView
+                android:id="@+id/createTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#959CA6" />
+            <TextView
+                android:id="@+id/createrTextView"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="#000000" />
+        </TableRow>
+    </TableLayout>
+    <ImageView
+        android:id="@+id/detailImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:src="@drawable/common_list_item_arrow" >
+    </ImageView>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_item_bg"
+    android:orientation="horizontal"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip" >
+    <CheckBox
+        android:id="@+id/wlCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_weight="3" >
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="bottom|left" >
+            <TextView
+                android:id="@+id/wlNoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/wlPriceTextView"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_weight="2"
+                android:textColor="#3366CC" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="top|left" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" >
+                <TextView
+                    android:id="@+id/wlNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="16dip" />
+                <TextView
+                    android:id="@+id/wlLevelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:textColor="#02c90c" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/wlCountTextView"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|top"
+                android:layout_weight="2"
+                android:textColor="#3366CC" />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/wlTotalPriceTextView"
+        android:layout_width="60dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#FF4D2E" />
+    <ImageView
+        android:id="@+id/wlDetailImage"
+        android:layout_width="8dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dip"
+        android:layout_weight="1"
+        android:src="@drawable/common_list_item_arrow" >
+    </ImageView>
+</LinearLayout>

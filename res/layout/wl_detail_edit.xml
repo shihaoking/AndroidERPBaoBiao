@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mymoney_bg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_bar_bg" >
+        <Button
+            android:id="@+id/backWlDetailBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/top_back_btn"
+            android:text="@string/back"
+            android:textColor="#ffffff"
+            android:textSize="14dip" >
+        </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/orderWlDetailEdit"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <LinearLayout
+        style="@style/scrollList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <!-- 物料编号 -->
+        <LinearLayout
+            style="@style/createOrderLytTop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                style="@style/wlDetailTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wlNo" />
+            <TextView
+                android:id="@+id/wlDetailNoTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!-- 物料名称 -->
+        <LinearLayout
+            style="@style/createOrderLytMid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                style="@style/wlDetailTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wlName" />
+            <TextView
+                android:id="@+id/wlDetailNameTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!-- 物料等级 -->
+        <LinearLayout
+            style="@style/createOrderLytMid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                style="@style/wlDetailTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wlLevel" />
+            <TextView
+                android:id="@+id/wlDetailLevelTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:textColor="#02c90c"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!-- 单价 -->
+        <LinearLayout
+            style="@style/createOrderLytMid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                style="@style/wlDetailTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wlPrice" />
+            <EditText
+                android:id="@+id/wlDetailPriceEt"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/wlDetailPreUnitTv"
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:textColor="#000000" />
+        </LinearLayout>
+        <!-- 数量 -->
+        <LinearLayout
+            style="@style/createOrderLytMid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                style="@style/wlDetailTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wlCount" />
+            <EditText
+                android:id="@+id/wlDetailCountEt"
+                android:layout_width="180dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:inputType="number" />
+            <TextView
+                android:id="@+id/wlDetailUnitTv"
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:textColor="#000000" />
+        </LinearLayout>
+        <!-- 需求日期 -->
+        <LinearLayout
+            style="@style/createOrderLytMid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                style="@style/createOrderTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xqDate" />
+            <Button
+                android:id="@+id/wlDetailXqDateSp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dateTip"
+                android:textSize="16dip" >
+            </Button>
+        </LinearLayout>
+        <!-- 到货日期 -->
+        <LinearLayout
+            style="@style/createOrderLytBtm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                style="@style/createOrderTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dhDate" />
+            <Button
+                android:id="@+id/wlDetailDhDateSp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dateTip"
+                android:textSize="16dip" >
+            </Button>
+        </LinearLayout>
+        <!-- 提交 -->
+        <LinearLayout
+            style="@style/createOrderLyt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="10dip" >
+            <Button
+                android:id="@+id/submitWlDetailBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/add_wl_btn"
+                android:text="@string/ok"
+                android:textColor="#000000"
+                android:textSize="19dip"
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

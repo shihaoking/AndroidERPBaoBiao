@@ -1,0 +1,42 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingBottom="10dip"
+	android:paddingLeft="10dip"
+	android:paddingRight="10dip"
+	android:stretchColumns="1" >
+	<TableRow android:gravity="center_horizontal" >
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/bumen"
+			android:textSize="19dip" />
+		<Spinner
+			android:id="@+id/bumenMain"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+	<TableRow
+		android:id="@+id/subRow"
+		android:gravity="center_horizontal"
+		android:visibility="gone" >
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/sub_bumen"
+			android:textSize="19dip" />
+		<Spinner
+			android:id="@+id/bumenSub"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+	</TableRow>
+	<TableRow>
+		<Button
+			android:id="@+id/submitBtn"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dip"
+			android:layout_span="2"
+			android:text="@string/ok" />
+	</TableRow>
+</TableLayout>
