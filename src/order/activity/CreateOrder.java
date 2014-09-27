@@ -18,12 +18,9 @@ import order.http.base.DataDowlond;
 import order.http.base.DataUpload;
 import order.http.base.HttpDownload;
 import order.http.base.SendSms;
-import order.json.factory.JsonHandler;
 import order.activity.R;
 import android.widget.*;
 import android.widget.AdapterView.OnItemSelectedListener;
-import android.R.bool;
-import android.R.integer;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
@@ -80,7 +77,6 @@ public class CreateOrder extends Activity {
 
 	public static List<CGDWLEntity> sltedWlEntities;
 
-	private boolean isDetailView = false;
 	private boolean wlChanged = false;
 	private boolean isEdited = false;
 
@@ -97,7 +93,6 @@ public class CreateOrder extends Activity {
 		backToMainBtn = (Button) findViewById(R.id.backToMain);
 		editBtn = (ImageView) findViewById(R.id.editBtn);
 		submitBtn = (Button) findViewById(R.id.submitCgdBtn);
-
 		checkStatusLayout = (LinearLayout) findViewById(R.id.checkStatusLayout);
 		checkStautsBtn = (ImageView) findViewById(R.id.checkStatus);
 		selectTimeBtn = (Button) findViewById(R.id.createTime);
