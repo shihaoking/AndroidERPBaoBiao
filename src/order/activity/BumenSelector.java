@@ -17,7 +17,6 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.TableRow;
 
 public class BumenSelector extends Activity {
-
 	private static String[] BUMEN_STRINGS = null;
 	private static String[] SUBBM_STRINGS = null;
 	private ArrayAdapter<String> adapter;
